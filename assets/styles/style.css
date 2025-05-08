@@ -1,5 +1,5 @@
 header{
-    background: url(../images/welcome-bg.jpg);
+    background: linear-gradient(45deg, #903a00d4 0% 50%, #6f7100bd 50% 100% ), url(../images/welcome-bg.jpg);
     background-size: cover;
     color: white;
     padding: 20px;
@@ -37,11 +37,14 @@ header .welcome{
 header .welcome h1{
     text-align: center;
     text-transform: uppercase;
+    line-height: 8.5rem;
+    font-weight: 600;
 }
 header .welcome .separate{
-    height: 2px;
+    height: 4px;
     background-color: var(--color-f);
-    margin: 2rem 0;
+    margin: 3rem 0;
+    width: 10%;
 }
 header .welcome > a{
     padding: 10px 20px;
@@ -55,7 +58,7 @@ header .welcome > a:hover{
     border-color: rgb(255, 208, 37);
 }
 header .welcome .welcome-footer .line{
-    height: 2px;
+    height: 4px;
     background-color: var(--color-f);
     position: relative;
 }
@@ -63,7 +66,7 @@ header .welcome .welcome-footer .line::after{
     content: "";
     position: absolute;
     width: 20%;
-    height: 2px;
+    height: 100%;
     background-color: rgb(255, 208, 37);
     transition: .3s ease-out;
 }
@@ -72,4 +75,14 @@ header .welcome .welcome-footer a:hover .line::after{
 }
 header .welcome .welcome-footer{
     gap: 1rem;
+}
+
+header .welcome .welcome-footer h4{
+    font-weight: 800;
+}
+header .welcome .welcome-footer p{
+    font-weight: 300;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
