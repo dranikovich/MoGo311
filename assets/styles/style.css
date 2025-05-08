@@ -86,3 +86,72 @@ header .welcome .welcome-footer p{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+section.about .images{
+    gap: 1.5rem;
+}
+section.about .images .item-bg{
+    width: calc(100%/3);
+    height: 27rem;
+    background: #ab62ff;
+}
+section.about .images .item-bg:nth-child(1) .item-img{
+    background-image: url(../images/about-1.jpg);
+}
+section.about .images .item-bg:nth-child(2) .item-img{
+    background-image: url(../images/about-2.jpg);
+}
+section.about .images .item-bg:nth-child(3) .item-img{
+    background-image: url(../images/about-3.jpg);
+}
+section.about .images .item-img{
+    background-size: cover;
+    transition: .3s ease-out;
+}
+section.about .images .item-fg{
+    background: linear-gradient(45deg, #ca5100d4, #caa900bd);
+    gap: 1.5rem;
+    color: var(--color-f);
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: .3s ease-out;
+}
+section.about .images .item-bg:hover .item-img{
+    transform: translate(-1rem, -1rem);
+}
+section.about .images .item-bg:hover .item-fg{
+    opacity: 1;
+}
+section.metrics{
+    margin-top: 2.5rem;
+    background-color: #ab62ff;
+}
+section.metrics .item{
+    padding: 5rem 0;
+    border-left: 2px solid #ccc;
+    gap: 0.25rem;
+    color: var(--color-f);
+}
+section.metrics .item:nth-child(5){
+    border-right: 2px solid #ccc;
+}
+section.metrics .item h3{
+    font-weight: 600;
+}
+section.metrics .item p{
+    text-transform: uppercase;
+}
+section.services .wrapper{
+    flex-wrap: wrap;
+}
+section.services .wrapper .service{
+    width: 33%;
+    height: 100px;
+    background-color: #ab62ff;
+}
+section.services .wrapper .separate{
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin: 1rem 0;
+}

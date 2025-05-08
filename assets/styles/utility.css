@@ -59,7 +59,8 @@ section .title p{
     letter-spacing: 1px;
     line-height: 1.25rem;
 }
-section .title h3{
+section .title h4{
     margin-bottom: -2rem;
     color: #666;
+
 }
