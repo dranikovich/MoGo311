@@ -1,18 +1,21 @@
-header{
-    background: linear-gradient(45deg, #903a00d4 0% 50%, #6f7100bd 50% 100% ), url(../images/welcome-bg.jpg);
+header {
+    background: linear-gradient(45deg, #903a00d4 0% 50%, #6f7100bd 50% 100%), url(../images/welcome-bg.jpg);
     background-size: cover;
     color: white;
     padding: 20px;
 }
-header .logo{
+
+header .logo {
     font-size: var(--font-size-xl);
     font-weight: 600;
 }
-header nav{
+
+header nav {
     gap: 1rem;
     font-weight: 500;
 }
-header nav a::after{
+
+header nav a::after {
     content: "";
     display: block;
     width: 0;
@@ -21,48 +24,58 @@ header nav a::after{
     margin-top: 1px;
     transition: .3s ease;
 }
-header nav a:hover::after{
+
+header nav a:hover::after {
     width: 100%;
     background-color: rgb(255, 208, 37);
 }
-header nav a{
+
+header nav a {
     transition: .3s ease;
 }
-header nav a:hover{
+
+header nav a:hover {
     color: rgb(255, 208, 37);
 }
-header .welcome{
+
+header .welcome {
     padding-top: 6rem;
 }
-header .welcome h1{
+
+header .welcome h1 {
     text-align: center;
     text-transform: uppercase;
     line-height: 8.5rem;
     font-weight: 600;
 }
-header .welcome .separate{
+
+header .welcome .separate {
     height: 4px;
     background-color: var(--color-f);
     margin: 3rem 0;
     width: 10%;
 }
-header .welcome > a{
+
+header .welcome>a {
     padding: 10px 20px;
     border: 2px solid var(--color-f);
     text-transform: uppercase;
     transition: .4s ease-in-out;
     margin-bottom: 6rem;
 }
-header .welcome > a:hover{
+
+header .welcome>a:hover {
     color: rgb(255, 208, 37);
     border-color: rgb(255, 208, 37);
 }
-header .welcome .welcome-footer .line{
+
+header .welcome .welcome-footer .line {
     height: 4px;
     background-color: var(--color-f);
     position: relative;
 }
-header .welcome .welcome-footer .line::after{
+
+header .welcome .welcome-footer .line::after {
     content: "";
     position: absolute;
     width: 20%;
@@ -70,44 +83,54 @@ header .welcome .welcome-footer .line::after{
     background-color: rgb(255, 208, 37);
     transition: .3s ease-out;
 }
-header .welcome .welcome-footer a:hover .line::after{
+
+header .welcome .welcome-footer a:hover .line::after {
     width: 80%;
 }
-header .welcome .welcome-footer{
+
+header .welcome .welcome-footer {
     gap: 1rem;
 }
 
-header .welcome .welcome-footer h4{
+header .welcome .welcome-footer h4 {
     font-weight: 800;
 }
-header .welcome .welcome-footer p{
+
+header .welcome .welcome-footer p {
     font-weight: 300;
     margin-left: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-section.about .images{
+
+section.about .images {
     gap: 1.5rem;
 }
-section.about .images .item-bg{
+
+section.about .images .item-bg {
     width: calc(100%/3);
     height: 27rem;
-    background: #ab62ff;
+    background: #d5b0ff;
 }
-section.about .images .item-bg:nth-child(1) .item-img{
+
+section.about .images .item-bg:nth-child(1) .item-img {
     background-image: url(../images/about-1.jpg);
 }
-section.about .images .item-bg:nth-child(2) .item-img{
+
+section.about .images .item-bg:nth-child(2) .item-img {
     background-image: url(../images/about-2.jpg);
 }
-section.about .images .item-bg:nth-child(3) .item-img{
+
+section.about .images .item-bg:nth-child(3) .item-img {
     background-image: url(../images/about-3.jpg);
 }
-section.about .images .item-img{
+
+section.about .images .item-img {
     background-size: cover;
     transition: .3s ease-out;
 }
-section.about .images .item-fg{
+
+section.about .images .item-fg {
     background: linear-gradient(45deg, #ca5100d4, #caa900bd);
     gap: 1.5rem;
     color: var(--color-f);
@@ -116,42 +139,128 @@ section.about .images .item-fg{
     opacity: 0;
     transition: .3s ease-out;
 }
-section.about .images .item-bg:hover .item-img{
+
+section.about .images .item-bg:hover .item-img {
     transform: translate(-1rem, -1rem);
 }
-section.about .images .item-bg:hover .item-fg{
+
+section.about .images .item-bg:hover .item-fg {
     opacity: 1;
 }
-section.metrics{
+
+section.metrics {
     margin-top: 2.5rem;
-    background-color: #ab62ff;
+    background-color: #d5b0ff;
 }
-section.metrics .item{
+
+section.metrics .item {
     padding: 5rem 0;
     border-left: 2px solid #ccc;
     gap: 0.25rem;
     color: var(--color-f);
 }
-section.metrics .item:nth-child(5){
+
+section.metrics .item:nth-child(5) {
     border-right: 2px solid #ccc;
 }
-section.metrics .item h3{
+
+section.metrics .item h3 {
     font-weight: 600;
 }
-section.metrics .item p{
+
+section.metrics .item p {
     text-transform: uppercase;
 }
-section.services .wrapper{
+
+section.services .wrapper {
     flex-wrap: wrap;
 }
-section.services .wrapper .service{
+
+section.services .wrapper .service {
     width: 33%;
     height: 100px;
-    background-color: #ab62ff;
+    gap: 1rem;
 }
-section.services .wrapper .separate{
+
+section.services .wrapper .separate {
     width: 100%;
     height: 2px;
     background-color: gray;
     margin: 1rem 0;
+}
+
+section.services .wrapper .service i {
+    font-size: 2rem;
+    color: #d5b0ff;
+}
+
+section.services .wrapper .service p {
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+section.devices {
+    background: url(../images/welcome-bg.jpg);
+    background-size: cover;
+}
+
+section.devices .images {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+section.devices .images .smartphone {
+    position: absolute;
+    width: 60%;
+    bottom: -200px;
+    right: -200px;
+    transition: .5s ease-out;
+}
+
+section.devices .images .tablet {
+    overflow: hidden;
+}
+
+section.devices .images .tablet img {
+    margin-bottom: -300px;
+}
+
+section.devices:hover .images .smartphone {
+    transform: rotate(15deg) translateX(200px);
+}
+
+section.we-do .accordion {
+    gap: 1.5rem;
+}
+
+section.we-do .accordion .accord .title {
+    height: 60px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+section.we-do .accordion .accord .description {
+    height: 0;
+    border: 1px solid #ccc;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    transition: .3s ease-out;
+}
+#accord-1:checked ~ #label-accord-1 .description,
+#accord-2:checked ~ #label-accord-2 .description,
+#accord-3:checked ~ #label-accord-3 .description {
+    height: 150px;
+}
+section.we-do .accordion .accord .description p{
+    margin-top: 1.5rem;
+}
+section.we-do input{
+    display: none;
+}
+
+section.we-do .interact{
+    gap: 1.125rem;
 }
