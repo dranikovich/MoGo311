@@ -70,3 +70,12 @@ section .title h4{
     color: #666;
 
 }
+.italic{
+    font-style: italic;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
